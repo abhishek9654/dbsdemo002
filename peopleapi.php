@@ -7,12 +7,12 @@ var $lastName;
 }
 $items = array();
 
-for ($i=0; $i<10; $i++); {
+for ($i=0; $i<10; $i++) {
 $personrecord = new person();
 $persronrecord-> personID = $i;
 $personrecord-> firstname = "name $i";
-$personRecord->lastName = "LastName $i";  
-$items[$i] = $personRecord;
+$personrecord->lastName = "LastName $i";  
+$items[$i] = $personrecord;
 }
  header('Content-Type: application/json');  
 $jsonOutput =  json_encode($items); 
