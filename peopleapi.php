@@ -1,18 +1,18 @@
 <?php
 
 class Person {
-var $person ID;
+var $personID;
 var $firstName;
 var $lastName;
 }
 $items = array();
 
-for ($i=0; i<10; i++); {
+for ($i=0; $i<10; $i++); {
 $personrecord = new person();
-$persronrecord-> person ID = $i;
+$persronrecord-> personID = $i;
 $personrecord-> firstname = "name $i";
 $personRecord->lastName = "LastName $i";  
-$items[$i] = $personRecordl;
+$items[$i] = $personRecord;
  header('Content-Type: application/json');  
 $jsonOutput =  json_encode($items); 
 echo $jsonoutput;
