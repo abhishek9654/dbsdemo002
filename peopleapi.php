@@ -9,8 +9,8 @@ $items = array();
 
 for ($i=0; $i<10; $i++) {
 $personRecord = new person();
-$persronRecord-> personID = $i;
-$personRecord-> firstname = "name $i";
+$persronRecord->personID = $i;
+$personRecord->firstname = "name $i";
 $personRecord->lastName = "LastName $i";  
 $items[$i] = $personRecord;
 }
