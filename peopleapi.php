@@ -8,11 +8,11 @@ var $lastName;
 $items = array();
 
 for ($i=0; $i<10; $i++) {
-$personrecord = new person();
-$persronrecord-> personID = $i;
-$personrecord-> firstname = "name $i";
-$personrecord->lastName = "LastName $i";  
-$items[$i] = $personrecord;
+$personRecord = new person();
+$persronRecord-> personID = $i;
+$personRecord-> firstname = "name $i";
+$personRecord->lastName = "LastName $i";  
+$items[$i] = $personRecord;
 }
  header('Content-Type: application/json');  
 $jsonOutput =  json_encode($items); 
