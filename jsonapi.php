@@ -1,8 +1,8 @@
 <?php
 $items = array ();
 for ($i <10; $i++) {
-$items [$i] = " This nis a message $i";
+$items [$i] = " This is a message $i";
 }
-header ('CONTENT-tYPE: application/json');
+header ('Content-Type: application/json');
 $jsonoutput = json_encode($items);
 echo $jsonoutput;
